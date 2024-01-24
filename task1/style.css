@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    width: 98.7vw;
+    height: fit-content;
+    position: absolute;
+    box-sizing: border-box;
+   
+}
+.wrapper{
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgb(236, 235, 235);
+}
+.exploreSection{
+    box-sizing: border-box;
+    width: 90%;
+    margin-top: 5%;
+    height: 60vh;
+    background-image: url(images/exploreImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:white;
+}
+.header{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 3%;
+    width: 92%;
+    justify-content: space-between;
+}
+.mainheading{
+    padding: 2vh 0vh;
+}
+.companyDetail{
+    width: 20vh;
+}
+.languageSelector{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.globalLogo{
+    height: 4vh;
+}
+.globalLogo img{
+    height: 100%;
+}
+.content{
+    width: 90%; 
+    background-color:white;
+}
+.wrapper1{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10vw;
+    /* border: 1px solid black; */
+    align-items: center;
+    padding: 1vh 0px;
+}
+.relatedImg{
+    width: 25vw;
+}
+.relatedImg img{
+    width: 100%;
+}
+.text{
+    width: calc(100% - 30vw - 25vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:95%;
+}
+.text h1{
+    width: 70%;
+    font-size: 28px;
+}
+.miniNav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+}
+.deviceslogo{
+    width: 3vh;
+}
+.deviceslogo img,.companyDetail img{
+    width: 100%;
+}
+.btn{
+    width: 40%;
+    /* margin: 0px a; */
+    background-color: rgb(33, 138, 33);
+    padding: 1.5vh 2vh;
+    border-radius: 3vh;
+    color: white;
+    font-weight: 700;
+}
+
+.content2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    padding-top: 10%;
+    background-color: white;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    width: 20vw;
+    height: 50vh;
+    text-align: center;
+}
+.itemsImage{
+    width: 13vw;
+    height: 18vh;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.itemsImage img{
+    height: 100%;
+}
+.lastBlock{
+    width: 90%;
+    /* margin-top: 5%; */
+    background-image: url(images/lastimage.png);
+    background-size:cover;
+    height: 90vh;
+}
+.lastContent{
+    position: absolute;
+    width: 90%;
+}
+.wrapper2{
+    display: flex;
+    justify-content: end;
+}
+.wrapped{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    left: -20%;
+    margin-top: 10%;
+}

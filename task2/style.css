@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Nunito+Sans:opsz,wght@6..12,500&family=Poppins:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    width: 100%;
+    height: fit-content;
+    /* overflow-x:hidden; */
+}
+#HomeSection,#AboutSection,#AchievementSection{
+    background-color: black;
+    overflow-x: hidden;
+}
+:root{
+    --navigationbar-theme-color:rgb(231, 9, 87);
+    --theme-color:	hsl(342, 100%, 50%);
+    --navigation-font:font-family: 'Open Sans', sans-serif;
+    --screen-width:100vw;
+}
+input, input:focus,textarea,textarea:focus{
+    outline: none;
+    border-radius: 0.5rem;
+    border: 1px solid #fafafa2c;
+    color: white;
+}
+.mainText{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+.briefingText,.contact-briefing{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+.aboutSection-header,.contact-heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+.aboutSection-briefing{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+}
+.experience-tenure,.education-tenure{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+}
+.experience-company,.education-school{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+}
+.education-degree{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+}
+.special{
+    color: var(--theme-color);
+}
+body{
+    color: white;
+}
+/* Scrollbar styling */
+/* width */
+.tabbedContentWrapper::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+.tabbedContentWrapper::-webkit-scrollbar-track {
+    background: #212020 ; 
+  }
+   
+  /* Handle */
+.tabbedContentWrapper::-webkit-scrollbar-thumb {
+    background:rgb(70, 69, 69); 
+    border-radius: 6px;
+  }
+
+ 
+ footer{
+    height: 30vh;
+    padding: 2rem 4rem;
+    font-family: 'Nunito Sans', sans-serif;
+    background: #090909;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+ }
+
+/* ========================================   HomeSection css   ================================================== */
+#HomeSection{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-content: space-around;
+    border-bottom:7px solid rgb(86, 86, 86);
+    overflow-x: hidden;
+}
+#HomeSection--mainContent{
+    width: 100%;
+    height: calc(100vh - 6rem);
+    padding: 0px 2rem;
+    display: grid;
+    align-items: center;
+}
+.sticky{
+    position: fixed;
+    left: 0;
+    top:0;
+    background-color: rgba(22, 22, 22, 0.355);
+    backdrop-filter: blur(5px);
+    z-index: 3;
+}
+.header{
+    padding: 1.25rem 1.25rem 0rem 1.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(62, 62, 62);
+}
+.logo{
+    width: 9rem;
+}
+.logo img,.menuIcon img, .cancelIcon img{
+    width: 100%;
+}
+.navigationBar{
+    width: 40%;
+}
+.navigationBar--wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--navigation-font);
+    font-size: 1.25rem;
+}
+.nav-items:hover{
+    text-decoration: underline;
+    transform: translate(0,-0.25rem);
+}
+.active a{
+    color: var(--theme-color);
+}
+.actionIcon{
+    display: flex;
+    z-index: 3;
+}
+.menuIcon,.cancelIcon{
+    width: 1.5rem;
+}
+.mobileViewOnly{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================    ABOUT SECTION CSS HERE    ===============================*/
+#AboutSection{
+    width: 100%;
+    height: 100vh;
+    border-bottom:7px solid rgb(86, 86, 86);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.aboutSection--contentWrapper{
+    width: 90vw;
+    height: fit-content;
+    /* padding:1rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutSectionLogo{
+    width: 30%;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 2px 3px 16px rgb(92, 92, 92);
+}
+.aboutSectionLogo img{
+    width: 100%;
+}
+.aboutSection--mainContent{
+    width: 65%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.tabbedButtonsContainer{
+    width: 85%;
+    height: 4rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+}
+.tabButton{
+    height: 2.75rem;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 0rem 2rem;
+    font-weight: 800;
+    background-color: black;
+    color: white;
+    border:none;
+}
+.tabButton:hover,.activeTabButton{
+    transition: all ease-out 0.15s;
+    transform: translate(0%,-0.5rem);
+    border-bottom: 3px solid var(--theme-color);
+}
+.tabbedContentWrapper{
+    width: 85%;
+    height: 15rem;
+    border-top: 3px solid rgb(41, 41, 41);
+    overflow-y: scroll;
+}
+.tabbedContent{
+    display: none;
+}
+.activetab{
+    display: flex;
+}
+
+.tabbedContent--1-wrapper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+.skill-item{
+    min-width: 50%;
+    padding: 1.3rem 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.skill-logo{
+    width: 3rem;
+}
+.skill-logo img{
+    width: 100%;
+}
+.skill-textSection{
+    width: calc(100% - 4rem);
+    display: grid;
+    gap: 0.75rem;
+}
+.progressBar{
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+.progress{
+    border: 2px solid rgb(57, 246, 4);
+    border-radius: 3px;
+}
+
+.tabbedContent--2-wrapper,.tabbedContent--3-wrapper{
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+}
+.experience-item,.education-item{
+    padding: 1rem;
+    width: 80%;
+    display: grid;
+    gap: 0.5rem;
+    border-bottom:1px solid rgb(41, 41, 41); ;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ /* =============================     ACHIEVEMENTS SECTION CSS     ==========================*/
+#AchievementSection{
+    width: 100%;
+    height: 100vh;
+    border-bottom:7px solid rgb(86, 86, 86);
+    /* background: white; */
+    padding: 2rem 1rem;
+    display: grid;
+    place-items: center;
+}
+.achievement--wrapper{
+    width: 50%;
+    height:fit-content;
+    display: grid;
+    align-content: space-between;
+    justify-content: center;
+}
+.achievementSection-heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    width: 100%;
+    color: white;
+    align-self:flex-start;
+}
+.achievementSection-wrapper{
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+
+
+
+
+/* ===============    Contact Section here    ==========================*/
+
+#ContactSection{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    color: white;
+    display: grid;
+    place-items: center;
+    border-bottom:7px solid rgb(86, 86, 86);
+}
+.contactSection-wrapper{
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-miniwrapper{
+    width: 100%;
+}
+.submission-form{
+    max-width: 80%;
+}
+form{
+    width: 100%;
+}
+form > div{
+    padding: 1rem 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+form > div> input, form > div > textarea{
+    padding: 5px;
+    font-size: 1rem;
+    background: #fafafa14;
+}
+.nameSection > input{
+    width: 45%;
+}
+.emailsection > input,.message > textarea{
+    width: 90%;
+}
+.submitbtn{
+    height: 4rem;
+    display: none;
+}
+.display{
+    display: block;
+}
+.submitbtn > button{
+    background: #000;
+    color: white;
+    border: 1px solid var(--theme-color);
+    font-size: 1rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 5px;
+}
+.submitbtn> button:hover{
+    transition: all linear 0.1s;
+    background-image: linear-gradient(45deg,rgba(248, 4, 216, 0.75) 35%,rgba(37, 112, 250, 0.795));
+    font-weight: 500;
+    border: none;
+    padding: 0.3rem 1.5rem;
+}
+.submitbtn > button:active{
+    background-image: linear-gradient(45deg,rgba(248, 4, 216, 1) 35%,rgba(37, 112, 250, 1));
+}
+
+@media screen and (max-width:500px) {
+    /* ===================== font adjustments ================================= */
+
+    .mainText{
+        font-size: 1.25rem;
+        font-weight: 900;
+    }
+    .briefingText{
+        font-size: 0.75rem;
+    }
+    #HomeSection--mainContent{
+        padding: 0px 0.5rem;
+    }
+
+
+    .logo{
+        width: 5rem;
+        align-self: baseline;
+    }
+    .active a{
+        color: white;
+    }
+
+    /* Navigation bar css */
+    .navigationBar--wrapper{
+        flex-direction: column;
+        margin-top: 7rem;
+        padding: 0px 1rem;
+    }
+    .nav-items{
+        margin-bottom: 2rem;
+    }
+    .mobileNavigationBar{
+        display: flex;
+        justify-content: flex-start;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50vw;
+        height: 100vh;
+        flex-direction: column;
+        background-color:var(--navigationbar-theme-color);
+        transition: all 2s linear;
+    }
+    .hiddenNavBar--forMobile{
+        display: none;
+    }
+
+    /* to hide menu or cancel btn */
+    .hideActivityBtn{
+        display: none;
+    }
+    /* to show menu and cancel btns */
+    .mobileViewOnly{
+        display: flex;
+    }
+/* ============================================    About Section    ========================================= */
+    .aboutSection--mainContent{
+        padding-top:2rem;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .useless{
+        min-width: 100%;
+        padding: 0rem 0.25rem;
+    }
+    .aboutSection-header{
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.25rem;
+    }
+    .aboutSection-briefing{
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8rem;
+    }
+   #AboutSection{
+        width: 100%;
+        height:fit-content;
+        padding: 4rem 0rem;
+   }
+   .aboutSection--contentWrapper{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        justify-content: center;
+   }
+   .aboutSectionLogo{
+        width: 50vw;
+        border-radius: 1rem;
+        margin: 0 auto;
+   }
+   .aboutSectionLogo img{
+        width: 100%;
+   }
+
+   .tabbedButtonsContainer{
+        width: 100%;
+   }
+   .tabButton{
+        padding: 0rem 0.75rem;
+        font-size: 0.75rem;
+   }
+   .tabbedContentWrapper{
+        width: 100%;
+        font-size: 0.75rem;
+   }
+   .skill-logo{
+        width: 2rem;
+   }
+   .skill-textSection{
+    width: 50vw;
+   }
+   .experience-tenure,.education-tenure,.education-degree{
+        font-size: 0.75rem;
+   }
+   .experience-company,.education-school{
+        font-size: 0.9rem;
+   }
+   .education-item{
+        width: 95%;
+   }
+
+
+
+   #AchievementSection{
+        height: 100vh;
+        padding: 0;
+        align-content: space-between;
+   }
+   .achievementSection-heading{
+        align-content: flex-start;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        padding: 0.5rem 3vw;
+   }
+   .achievementSection-wrapper{
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+   .achievement--wrapper{
+        width: 95%;
+   }
+   /* ==============contact section ============= */
+   #ContactSection{
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+   }
+   .contactSection-wrapper{
+        min-width: 100%;
+        /* justify-self: flex-start; */
+        padding: 0px 0.25rem;
+   }
+   .contact-heading{
+        font-size: 1.5rem;
+   }
+   .contact-briefing{
+        font-size: 0.8rem;
+   }
+   .submission-form{
+        max-width: 95%;
+   }
+
+
+   footer{
+        padding:2rem 0.5rem;
+        font-size: 0.75rem;
+   }
+}

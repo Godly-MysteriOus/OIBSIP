@@ -1,0 +1,27 @@
+
+.swiper {
+    width: 100%;
+    height: fit-content;
+}
+.swiper-slide{
+
+    width: 100%;
+    display: flex;
+}
+.useless-divs{
+    width: 75%;
+    margin: 0px auto;
+}
+.swiper-slide img{
+    object-fit: contain;
+    width: 100%;
+}
+@media screen and (max-width:600px) {
+    .useless-divs{
+        width: 85%;
+    }
+    .swiper-button-next,.swiper-button-prev{
+        max-height: 2rem;
+        overflow: hidden;
+    }
+}

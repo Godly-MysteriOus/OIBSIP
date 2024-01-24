@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--=============   FLATICON CDN   =========================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/flat-icons@1.0.0/creative.min.css" rel="stylesheet">
+    <!--===========  CUSTOM STYLESHEET ===========-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swipper.css">
+    <!--===========   SWIPER JS STYLESHEET ===========-->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!--============   AMINATION ON SCROLL    ===========-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div id="HomeSection">
+        <!-- header contains logo, navigation bar and menu & cancel buttons -->
+        <div class="header">
+            <div class="logo"><img src="images/logo.png" alt=""></div>
+            <div class="navigationBar mobileNavigationBar hiddenNavBar--forMobile">
+                <div class="navigationBar--wrapper">
+                    <div class="nav-items nav-item--1"><a href="#HomeSection" data-navitem-number="1">Home</a></div>
+                    <div class="nav-items nav-item--2"><a class="nav-item" href="#AboutSection"  data-navitem-number="2">About</a></div>
+                    <div class="nav-items nav-item--3"><a class="nav-item" href="#AchievementSection" data-navitem-number="3">Achievements</a></div>
+                    <!-- <div class="nav-items nav-item--4"><a class="nav-item" href="#PortfolioSection" data-navitem-number="4">My Work</a></div> -->
+                    <div class="nav-items nav-item--5"><a class="nav-item" href="#ContactSection" data-navitem-number="5">Contact</a></div>
+                </div>
+            </div>
+            <div class="actionIcon mobileViewOnly">
+                <div class="menuIcon "><img src="images/menu.png" alt=""></div>
+                <div class="cancelIcon hideActivityBtn"><img src="images/close.png" alt=""></div>
+            </div>
+        </div>
+        <!-- header ends here -->
+
+
+        <!-- homeSection--mainContent -->
+        <div id="HomeSection--mainContent"  data-aos="fade-down" data-aos-offset="0" data-aos-delay="50" data-aos-duration="1000">
+            <div class="homeSection--contentWrapper">
+                <p class="briefingText">Frontend Web Developer</p>
+                <p class="mainText">Hi, I'm <span class="special">Jayant Singh</span> <br> from Bhopal, Madhya Pradesh</p>
+            </div>
+        </div>
+    </div>
+    <!-- HomeSection ends here -->
+    <div id="AboutSection">
+        <div class="aboutSection--contentWrapper">
+            <div class="aboutSectionLogo"  data-aos="slide-right" data-aos-offset="0" data-aos-delay="50" data-aos-duration="1000">
+                <img src="images/aboutImg.jpg" alt="">
+            </div>
+            <div class="aboutSection--mainContent" data-aos="slide-left" data-aos-offset="0" data-aos-delay="50" data-aos-duration="1000" >
+                <div class="useless">
+                    <div class="aboutSection-header">About Me</div>
+                    <div class="aboutSection-briefing">Welcome to my corner of the web! I am a passionate and dedicated individual with a versatile skill set in web development and programming. Proficient in HTML, CSS, and Bootstrap. My proficiency extends to JavaScript and the React framework, enabling me to build dynamic and responsive user interfaces. Beyond web development, I possess expertise in C++ and a knack for problem-solving, showcasing a holistic approach to software engineering.</div>
+                </div>
+                <div class="useless">
+                    <div class="tabbedButtonsContainer">
+                        <button class="tabButton tabBtn--1 activeTabButton" data-button-pressed="1">Skills</button>
+                        <button class="tabButton tabBtn--2" data-button-pressed="2">Experience</button>
+                        <button class="tabButton tabBtn--3" data-button-pressed="3">Education</button>
+                    </div>
+                
+                    <div class="tabbedContentWrapper" data-aos="fade-down" data-aos-offset="100" data-aos-delay="800" data-aos-duration="1500"  >
+
+
+                        <!--====================     SKILL SECTION HERE     =========================== -->
+                        <div class="tabbedContent tabbed-content--1 activetab">
+                            <div class="tabbedContent--1-wrapper">
+                                <div class="skill-item">
+                                    <div class="skill-logo"><img src="images/html.png" alt=""></div>
+                                    <div class="skill-textSection">
+                                        <div class="skill-text">HTML</div>
+                                        <div class="progressBar"><div class="progress" data-progress="80"></div></div>
+                                    </div>
+                                </div>
+                                <!-- html -->
+                                <div class="skill-item">
+                                    <div class="skill-logo"><img src="images/css.png" alt=""></div>
+                                    <div class="skill-textSection">
+                                        <div class="skill-text">CSS</div>
+                                        <div class="progressBar"><div class="progress" data-progress="70"></div></div>
+                                    </div>
+                                </div>
+                                <!--css-->
+                                <div class="skill-item">
+                                    <div class="skill-logo"><img src="images/bootstrap.jpg" alt=""></div>
+                                    <div class="skill-textSection">
+                                        <div class="skill-text">BootStrap</div>
+                                        <div class="progressBar"><div class="progress" data-progress="50"></div></div>
+                                    </div>
+                                </div>
+                                <!--bootstrap-->
+                                <div class="skill-item">
+                                    <div class="skill-logo"><img src="images/javascript.png" alt=""></div>
+                                    <div class="skill-textSection">
+                                        <div class="skill-text">JavaScript</div>
+                                        <div class="progressBar"><div class="progress" data-progress="40"></div></div>
+                                    </div>
+                                </div>
+                                <!--JavaScript-->
+                                <div class="skill-item">
+                                    <div class="skill-logo"><img src="images/react.png" alt=""></div>
+                                    <div class="skill-textSection">
+                                        <div class="skill-text">React js</div>
+                                        <div class="progressBar"><div class="progress" data-progress="20"></div></div>
+                                    </div>
+                                </div>
+                                <!--react-->
+                                <div class="skill-item">
+                                    <div class="skill-logo"><img src="images/cpp.png" alt=""></div>
+                                    <div class="skill-textSection">
+                                        <div class="skill-text">C++</div>
+                                        <div class="progressBar"><div class="progress" data-progress="75"></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!--======================    EXPERIENCE SECTION HERE    ================================-->
+                        <div class="tabbedContent tabbed-content--2">
+                            <div class="tabbedContent--2-wrapper">
+                                <div class="experience-item">
+                                    <div class="experience-tenure"> <span class="special">Febuary 2024 - present</span> </div>
+                                    <div class="experience-company">Bharat Intern Web Development Internship</div>
+                                </div>
+                                <!--Internship 1-->
+                                <div class="experience-item">
+                                    <div class="experience-tenure"><span class="special"> January 2024 - present</span></div>
+                                    <div class="experience-company">Oasis Infobyte Web Development Internship</div>
+                                </div>
+                                <!--Internship 2-->
+                            </div>
+                        </div>
+
+
+
+                        <!--===================    EDUCATION SECTION HERE    =======================-->
+                        <div class="tabbedContent tabbed-content--3">
+                            <div class="tabbedContent--3-wrapper">
+                                <div class="education-item">
+                                    <div class="education-tenure"><span class="special"> Febuary 2024 - Present</span></div>
+                                    <div class="education-degree">Skill- React and Tailwind CSS</div>
+                                    <div class="education-school">Udemy</div>
+                                </div>
+                                <div class="education-item">
+                                    <div class="education-tenure"><span class="special"> November 2023 - January 2024</span></div>
+                                    <div class="education-degree">Skill- JavaScript</div>
+                                    <div class="education-school">Udemy</div>
+                                </div>
+                                <div class="education-item">
+                                    <div class="education-tenure"><span class="special"> November 2021 - Present</span></div>
+                                    <div class="education-degree">B.Tech, CSE</div>
+                                    <div class="education-school">Kalinga Institute of Indutrial Technology, Demeed to be University, Bhubaneshwar</div>
+                                </div>
+                                <div class="education-item">
+                                    <div class="education-tenure"><span class="special"> April 2004 - March 2020</span></div>
+                                    <div class="education-degree">Primary, Secondary Education</div>
+                                    <div class="education-school">St. Xavier's sr. sec. co-ed school, Bhopal</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- AboutSection ends here -->
+
+
+
+    <!-- ACHIEVEMENTS SECTION starts here -->
+        <div id="AchievementSection">
+            <div class="achievementSection-heading">Achievements</div>
+            <div class="achievementSection-wrapper">
+                <div class="achievement--wrapper"  data-aos="fade-down" data-aos-offset="0" data-aos-delay="50" data-aos-duration="1000">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="useless-divs">
+                                <img src="images/hackerrank-basics.jpg" alt=""></div>
+                            </div>
+                          <div class="swiper-slide">
+                            <div class="useless-divs">
+                                <img src="images/hackerrank-intermediate.jpg" alt=""></div>
+                            </div>
+                          <!-- <div class="swiper-slide">Slide 3</div> -->
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+            </div>
+           
+        </div>
+    <!--ACHIEVEMENT SECTIONS ENDS HERE-->
+
+
+
+    <!--============================= Contact Section here =================================-->
+    <div id="ContactSection">
+        <div class="contactSection-wrapper">
+            <div class="contact-miniwrapper">
+                <div class="contact-heading">Contact Us</div>
+                <div class="contact-briefing">Drop me a line through the form below, and I'll get back to you. </div>
+            </div>
+            <div class="submission-form">
+                <form action="index.html">
+                    <div class="nameSection">
+                       <input type="text" class="contact-inputs" placeholder="First Name" required>
+                       <input type="text" class="contact-inputs" placeholder="Last Name" required>
+                    </div>
+                    <div class="emailsection">
+                        <input type="email" class="contact-inputs" required placeholder="email address">
+                    </div>
+                    <div class="message">
+                        <textarea name="" id="" cols="30" rows="3" class="contact-inputs" placeholder="Enter your message here" required></textarea>
+                    </div>
+                    <div class="submitbtn display">
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="footer-message">
+        <i class="ri-copyright-fill"></i> 2023 Jayant. All rights reserved. The content, images, and design of this website are protected by copyright law. Any unauthorized use, reproduction, or distribution is strictly prohibited. This website is developed and owned by Jayant Singh. For any queries contact at singhrajputjayant8@gmail.com.
+        <br><br>Crafted with <img src="images/heart.png" alt="" height="20px" style=" transform: translate(0px,5px);">&nbsp;in  Bhopal, Madhya Pradesh.
+    </div>
+</footer>
+
+</html>
